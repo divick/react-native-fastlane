@@ -14,8 +14,4 @@ elif [[ -z "${TARGET_SDK}" ]]; then
 else
     target=${TARGET_SDK}
 fi
-if [[ -z REACTNATIVE_VERSION ]]; then
-    docker build --build-arg REACTNATIVE_VERSION=$REACTNATIVE_VERSION -t gorapidio/react-native-fastlane -f android-${target}/Dockerfile android-${target}/
-else
-    docker build -t gorapidio/react-native-fastlane:android-${TARGET_SDK} -f android-${target}/Dockerfile android-${target}/
-fi
+docker build -t gorapidio/react-native-fastlane:android-${TARGET_SDK} -f android-${target}/Dockerfile android-${target}/
