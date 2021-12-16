@@ -1,7 +1,7 @@
 #!/bin/bash
 
 _usage="
-Usage: TARGET_SDK=[28|29|30] REACTNATIVE_VERSION=[0.63.2|...] ./bin/build-image.sh
+Usage: TARGET_SDK=[28|29|30] ./bin/build-image.sh
 "
 if [[ ! -v TARGET_SDK ]]; then
   echo "Please specify TARGET_SDK to build.";
