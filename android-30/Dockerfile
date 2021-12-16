@@ -2,7 +2,7 @@ ARG ANDROID_API_VERSION="android-30"
 
 FROM gorapidio/android-fastlane:${ANDROID_API_VERSION}
 
-ARG NODE_VERSION=v14.17.1
+ARG NODE_VERSION=v14.17.5
 
 ENV NVM_DIR="$HOME/.nvm"
 
